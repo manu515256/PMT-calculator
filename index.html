@@ -1,0 +1,68 @@
+<html>
+
+<head>
+  <!-- Material Design Lite -->
+  <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+  <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.cyan-amber.min.css">
+  <!-- Material Design icon font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" type="text/css" href="./main.css">
+  <script src="main.js"></script>
+</head>
+
+<body>
+
+  <div class="mdl-card mdl-shadow--2dp animated slideInUp">
+    <div class="mdl-card__supporting-text cyan">
+      <p class="installment-label animated slideInDown">Pago mensual</p>
+      <p id="installment_value" class="installment-value animated slideInDown">$ 0.00</p>
+    </div>
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-card">
+      <select class="mdl-textfield__input" id="tipo" name="octane" onchange="filter()">
+        <option>Seleccione </option>
+        <option value="sldo">Descuento por recibo de sueldo</option>
+        <option value="cbu">Descuento por CBU</option>
+      </select>
+      <label class="mdl-textfield__label" for="octane">¿Cómo se descuenta tu préstamo?
+      </label>
+    </div>
+
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-card " id="sueldo-card">
+
+      </div>
+
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-card" id="cbu-card"">
+    
+
+      </div>
+      <div class="mdl-card__supporting-text">
+        <form action="#">
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="valor" tabindex="1">
+            <label class="mdl-textfield__label" for="sample4">Valor</label>
+            <span class="mdl-textfield__error">Valor no es un numero!</span>
+          </div>
+          <br>
+
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-card " id="cuotas-card">
+          <select class="mdl-textfield__input" id="cuotas" name="cuotas" >
+            <option>¿En cuántas cuotas querés pagar?</option>
+            <option value="6">6</option>
+            <option value="12">12</option>
+            <option value="18">18</option>
+            <option value="24">24</option>
+            <option value="30">30</option>
+            <option value="36">36</option>
+            </select>
+          </div>
+          <br>
+        </form>
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" onclick="selector()">CALCULAR</button>
+      </div>
+    </div>
+    
+    
+    
+</body>
+
+</html>

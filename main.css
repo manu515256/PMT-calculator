@@ -1,0 +1,44 @@
+body {
+    padding: 20px;
+    background: #eceff1;
+    position: relative;
+  }
+  
+  .mdl-card{
+    margin:0 auto;
+    min-height: 0 !important;
+  }
+  
+  .slider-label{
+    color:#9E9E9E;
+  }
+  
+  .tool-label{
+    color:#00BCD4;
+    font-size: 24px;
+  }
+  
+  .installment-label{
+    color:#FFFFFF;
+    text-align:center;
+  }
+  
+  .installment-value{
+    color:#FFFFFF;
+    text-align:center;
+    font-size:28px;
+  }
+  
+  .slider-value{
+    font-weight:bold;
+  }
+  
+  .installment-value{
+    text-align:center;
+    font-weight:bold;
+  }
+  
+  .cyan {
+      color:#FFFFFF;
+      background-color: #2196F3;
+  }
